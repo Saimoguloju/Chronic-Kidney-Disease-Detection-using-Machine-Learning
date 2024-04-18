@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Initial Stage</title>
+    <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
+    <style>
+        /* CSS for the layout */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap; /* Wrap items to next line if they overflow */
+        }
+        .content {
+            width: 60%;
+            margin-bottom: 20px; /* Adjust margin between items */
+        }
+        .image {
+            width: 20%;
+            text-align: center;
+            margin-bottom: 20px; /* Adjust margin between items */
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'recommendation' %}">BACK</a></li>
+    <div class="container">
+        <div class="content">
+            <h3 style="text-align: center;"> Importance</h3>
+            <p>CKD Stage 2 is characterized by mild kidney damage with a slight decline in kidney function and often no clear symptoms.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/image1.jpg' %}" alt="Diagram 1">
+        </div>
+
+        <!-- Repeat this structure for other points -->
+        <div class="content">
+            <h3 style="text-align: center;"> Diagnosis</h3>
+            <p>Diagnosis through blood and urine tests showing kidney damage markers; monitoring progression is crucial.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/diagnosis.webp' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Scientific Drug</h3>
+            <p>Focus remains on controlling underlying conditions; ACE inhibitors or ARBs may be prescribed to protect kidney function.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/medicine.jpg' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;">Food Precautions</h3>
+            <p>Potassium and phosphorus intake may still be normal, but continue a healthy, balanced diet and monitor protein intake.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/food.jpg' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Physical Exercise Recommendation</h3>
+            <p>Continue moderate exercise, incorporating resistance training to maintain muscle strength.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/gym.jpg' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Hydration</h3>
+            <p>Continue with individual hydration needs, being cautious not to overhydrate</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/hydration.png' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Yoga for Wellness</h3>
+            <p>Including Vajrasana (Thunderbolt Pose) for digestive health and Utkatasana (Chair Pose) for strength.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/yoga.jpg' %}" alt="Diagram 2">
+        </div>
+
+
+        <!-- Repeat for other points -->
+    </div>
+</body>
+</html>

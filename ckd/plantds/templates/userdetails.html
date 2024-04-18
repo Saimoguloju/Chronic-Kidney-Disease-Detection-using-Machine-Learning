@@ -1,0 +1,53 @@
+{% extends 'adminbase.html' %}
+{% load static %}
+
+{% block contents %}
+<div class="content max-width-1 m-auto">
+  <div class="content-text">
+    <center><h2>Activate New User </h2><center>
+</div>
+            <center><h3></center>
+        <table class="table" style="margin-left: 20px;">
+		
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Mobile no:</th>
+      <th>Status</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for x in qs %}
+    <tr>
+      
+      <td>{{x.id}}</td>
+      <td>{{x.name}}</td>
+      <td>{{x.email}}</td>
+      <td>{{x.mobileno}}</td>
+      <td>{{x.status}}</td>
+    {% if x.status == 'waiting' %}
+                                    <td style="color:orange"> <a href="/activateuser/?pid={{ x.id }}" >Activate</a></td>
+                                    {% else %}
+                                            <td style="color:orange"> Activated</td>
+                                            {% endif %}
+
+                                     </tr>
+                                    {% endfor %}
+    
+  </tbody>
+</table>
+                </h3>
+              </center>
+
+
+<!--            <div class="col-sm-6 col-sm-6 ipad">-->
+<!--                <img class="ipad-screen img-responsive" src="{% static 'images/traffic.png' %}"/>-->
+<!--            </div>-->
+
+
+
+        </div>
+{% endblock %}

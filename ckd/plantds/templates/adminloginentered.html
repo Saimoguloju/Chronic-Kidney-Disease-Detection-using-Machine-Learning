@@ -1,0 +1,28 @@
+{% extends 'adminbase.html' %}
+{% load static %}
+
+{% block contents %}
+    <div class="container py-2">
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">Welcome to Admin Page</div>
+
+        <article class="postcard light blue">
+            <a class="postcard__img_link" href="#">
+                <img class="postcard__img" 
+                src="{% static 'images/images.jfif' %}" alt="Image Title" />
+				
+            </a>
+            <div class="postcard__text t-dark">
+                <h1 class="postcard__title blue"><a href="#">Admin Work</a></h1>
+                <div class="postcard__subtitle small">
+                   
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">When ever new user sign up admin must give access to the new user. Then only user can start accessing the website.</div>
+				<p> Go to User Details Page and give access to the new user. </p>
+            </div>
+        </article>
+
+        
+        
+    </div>
+{% endblock %}

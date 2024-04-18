@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>CHRONIC KIDNEY DISEASE DETECTION USING MACHINE LEARNING</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">-->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================
+    <link href="assets/css/theme.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light opacity-85" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container">
+          
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="{% url 'index' %}">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'userlogin' %}">User Sign In</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'adminlogin1' %}">Admin Sign In</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'aboutproject' %}">About Project</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'contact1' %}">Contact us</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'recommendation' %}">Recommendation</a></li>
+
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <section class="py-0" id="header">
+        <!-- <div>
+          <img src="{% static 'images/hero-header.png' %}" alt="" style="float: right; height: 400px ; ">
+        </div> -->
+        <!-- <div class="bg-holder d-none d-md-block" style="background-image:url({% static 'images/hero-header.png' %}); background-position:right top; background-size:contain;"></div> -->
+        <!-- <div>
+          <img src="{% static 'images/hero-header.png' %}" style="height: 300px; width: 500px; float: right;">
+        </div> -->
+
+
+
+        <div>
+          <img src="{% static 'images/hero-header.png' %}" style="float: right; height: 300px; width: 400px; margin-right: 90px;">
+          <div style="margin-left: 70px; margin-top: 100px;">
+            <br><br><br><br>
+            <h1 class="fw-semi-bold">CHRONIC KIDNEY</h1>
+            <h1 class="fw-semi-bold" >DISEASE DETECTION </h1>
+            <h1 class="fw-semi-bold">USING MACHINE LEARNING</h1>
+            
+          </div> 
+        </div>
+
+
+      
+
+
+
+
+
+
+      
+        <!--<div class="bg-holder d-none d-md-block" style="background-image:url({% static 'images/hero-bg.png' %});background-position:right top;background-size:contain;"></div>
+        <div class="bg-holder d-none d-md-block">
+          <img src="{% static 'images/hero-header.png' %}" style="background-position:right top;background-size:contain;">
+        </div> 
+        /.bg-holder
+        <div class="bg-holder d-md-none">
+          <img src="{% static 'images/hero-bg.png' %}" style="background-position:right top;background-size:contain;">
+        </div>-->
+        <!--/.bg-holder-->
+
+
+
+
+        <!-- <div class="container">
+          <div class="row align-items-center min-vh-75 min-vh-lg-100">
+            <div class="col-md-7 col-lg-6 col-xxl-5 py-6 text-sm-start text-center "  >
+            
+              <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6">Malaria Disease Detection <br class="d-block d-lg-block" />Using Blood Cells</h1>
+              <p class="mb-4 fs-1">Project recognize the Disease predicition using Blood cells images.</p>
+
+            </div>
+          </div>
+        </div> -->
+      </section>
+  
+
+      
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script  src="{% static 'js/vendors/@popperjs/popper.min.js' %}"></script>
+    <script  src="{% static 'js/vendors/bootstrap/bootstrap.min.js' %}"></script>
+    <script  src="{% static 'js/vendors/is/is.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>

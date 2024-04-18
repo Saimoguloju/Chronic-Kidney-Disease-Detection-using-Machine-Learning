@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Initial Stage</title>
+    <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
+    <style>
+        /* CSS for the layout */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap; /* Wrap items to next line if they overflow */
+        }
+        .content {
+            width: 60%;
+            margin-bottom: 20px; /* Adjust margin between items */
+        }
+        .image {
+            width: 20%;
+            text-align: center;
+            margin-bottom: 20px; /* Adjust margin between items */
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'recommendation' %}">BACK</a></li>
+    <div class="container">
+        <div class="content">
+            <h3 style="text-align: center;"> Importance</h3>
+            <p>Individuals without CKD have normal kidney function with no signs of kidney damage. Maintaining this status involves a healthy lifestyle and regular monitoring for those at risk of kidney diseases.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/image1.jpg' %}" alt="Diagram 1">
+        </div>
+
+        <!-- Repeat this structure for other points -->
+        <div class="content">
+            <h3 style="text-align: center;"> Diagnosis</h3>
+            <p>Not required for healthy individuals, but regular check-ups can help ensure kidneys are functioning properly, especially for those with risk factors like diabetes or hypertension.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/diagnosis.webp' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Scientific Drug</h3>
+            <p>No specific drugs are needed for healthy kidneys, but maintaining overall health through managing blood pressure and blood sugar levels is key.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/image2.jpg' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;">Food Precautions</h3>
+            <p>A balanced diet rich in fruits, vegetables, whole grains, and low in processed foods and sodium helps maintain kidney health.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/food.jpg' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Physical Exercise Recommendation</h3>
+            <p>Regular physical activity, such as 150 minutes of moderate-intensity aerobic exercise per week, supports overall health and kidney function.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/exercise.jpg' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Hydration</h3>
+            <p>Drink sufficient water to stay hydrated, typically about 2-3 liters per day, depending on individual needs, climate, and activity level.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/hydration.png' %}" alt="Diagram 2">
+        </div>
+
+        <div class="content">
+            <h3 style="text-align: center;"> Yoga for Wellness</h3>
+            <p>General wellness yoga poses such as Tadasana (Mountain Pose) for posture and circulation, and Padahastasana (Standing Forward Bend) for relaxation and kidney stimulation.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/yoga.jpg' %}" alt="Diagram 2">
+        </div>
+
+
+        <!-- Repeat for other points -->
+    </div>
+</body>
+</html>

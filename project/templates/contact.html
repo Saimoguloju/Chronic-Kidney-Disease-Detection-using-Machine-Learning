@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Chronic kidney disease detection using machine learning</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">-->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================
+    <link href="assets/css/theme.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
+    <style>
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+      th, td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+      .vinay{
+        margin-top: 70px;
+      }
+    </style>
+
+  </head>
+  <body>
+      <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light opacity-85" data-navbar-on-scroll="data-navbar-on-scroll">
+          <div class="container">
+            
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="{% url 'home' %}">Home</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="{% url 'adddata' %}">Prediction Page</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'logout' %}">SIGN OUT</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'contact' %}">Contact</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'about' %}">About us</a></li>
+
+  
+
+  
+  
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+        <section class="py-0" id="header">
+          {% comment %} <div class="bg-holder d-none d-md-block" style="background-image:url({% static 'images/hero-header.png' %}); background-position:right top; background-size:contain;"></div> {% endcomment %}
+          <div class="container">
+            <img src="{% static 'images/hero-header.png' %}" style="float: right; height: 300px; width: 400px; margin-right: 10px; margin-top: 130px;">
+            
+
+            <div class="row align-items-center min-vh-75 min-vh-lg-100">
+                
+                <form class="vinay" >
+                    <h2>Who Developed This Project</h2>
+                    <br>    
+                    <table>
+                      <thead>
+                          <tr>
+                              <th>Student Name</th>
+                              <th>Student ID</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>P.Arvind</td>
+                              <td>20K91A6734</td>
+                          </tr>
+                          <tr>
+                              <td>P.Laxmi Priya</td>
+                              <td>20K91A6731</td>
+                          </tr>
+                          <tr>
+                              <td>M.Sai</td>
+                              <td>20K91A6726</td>
+                          </tr>
+                          <tr>
+                            <td>K.Sai Ram</td>
+                            <td>21K95A6704</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <br>
+                  <h4>College Name :</h4><span>TKR College Of Engineering & Technology</span>
+                  <h4>Under the Guidance of :</h4><span>MRS.K.KIRANMAYEE </span>
+
+
+
+
+
+                   
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {% comment %} <div class="form-floating mb-3">
+                      <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" style="width: 460px;">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" style="width: 460px;">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-40 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" >Sign up</button> {% endcomment %}
+                    
+                </form>
+              <!-- <div class="col-md-7 col-lg-6 col-xxl-5 py-6 text-sm-start text-center">
+                <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6">Malaria Disease Detection <br class="d-block d-lg-block" />Using Blood Cells</h1>
+                <p class="mb-4 fs-1">Project recognize the Disease predicition using Blood cells images.</p>
+              </div> -->
+            </div>
+          </div>
+        </section>
+
+
+
+     
+    
+  
+        <section class="py-0" id="contact">
+          
+          <!--/.bg-holder-->
+          <div class="container">
+            
+            <hr class="text-300 mb-0" />
+           
+          </div>
+        </section>
+
+    
+
+
+
+   
+    
+
+   
+
+
+    <script  src="{% static 'js/vendors/@popperjs/popper.min.js' %}"></script>
+    <script  src="{% static 'js/vendors/bootstrap/bootstrap.min.js' %}"></script>
+    <script  src="{% static 'js/vendors/is/is.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&amp;display=swap" rel="stylesheet">  
+  </body>
+</html>  

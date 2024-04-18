@@ -1,0 +1,109 @@
+{% load static %}
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chronic Disease Detection</title>
+    <meta name="Nova theme" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Navigation
+    ================================================== -->
+<div class="hero-background">
+    <div>
+        <img class="strips" src="{% static 'images/strips.png' %}">
+    </div>
+    <div class="container">
+        <div class="header-container header">
+            <a class="navbar-brand logo" href="#"> <img class="logo" src="{% static 'images/logo.svg' %}"/> </a>
+            <a href="#email-form">
+<!--                <button class="header-btn"> Download FREE!</button>-->
+            </a>
+            <div class="header-right">
+                <a class="navbar-item" href="{% url 'index' %}">HOME</a>
+                <a class="navbar-item" href="{% url 'userlogin' %}">USERS</a>
+                <a class="navbar-item" href="{% url 'adminlogin1'%}">ADMIN</a>
+<!--                <a class="navbar-item" href="#features">Features</a>-->
+            </div>
+        </div>
+        <!--navigation-->
+{% block contents %}
+
+
+
+            {% endblock %}
+
+
+        <!-- Hero-Section
+          ================================================== -->
+
+
+    </div> <!--hero-container-->
+
+</div><!--hero-background-->
+
+
+
+
+
+
+
+
+<!--<div class="footer">-->
+
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+
+<!--            <div class="col-sm-2"></div>-->
+
+<!--            <div class="col-sm-8 webscope">-->
+<!--                <span class="webscope-text"> @lexa </span>-->
+<!--                <a href="https://webscopeapp.com"> <img src="{% static 'images/webscope.svg' %}"/> </a>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;webscope&ndash;&gt;-->
+
+<!--            &lt;!&ndash;<div class="col-sm-2">-->
+<!--                <div class="social-links">-->
+<!--                    <a href="https://twitter.com/webscopeapp"> <img class="social-link"-->
+<!--                                                                    src="{% static 'images/twitter.svg' %}"/> </a>-->
+<!--                    <a href="https://www.facebook.com/webscopeapp/?ref=aymt_homepage_panel"> <img-->
+<!--                            src="{% static 'images/facebook.svg' %}"/> </a>-->
+<!--                </div>-->
+<!--                &lt;!&ndash;social-links&ndash;&gt;-->
+<!--            </div>&ndash;&gt;-->
+<!--            &lt;!&ndash;social-links-parent&ndash;&gt;-->
+
+<!--        </div>-->
+<!--        &lt;!&ndash;row&ndash;&gt;-->
+
+<!--    </div>-->
+<!--    &lt;!&ndash;container&ndash;&gt;-->
+<!--</div>-->
+<!--footer-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title> Chronic kidney disease detection using machine learning</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">-->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================
+    <link href="assets/css/theme.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
+  </head>
+  <style>
+    form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+}
+.text {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"],
+input[type="button"] {
+  width: calc(50% - 5px);
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="button"] {
+  background-color: #28a745;
+}
+.login {
+  flex: 1;
+  padding: 20px;
+}
+</style>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light opacity-85" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container">
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="{% url 'adddata' %}">Prediction Page</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'logout' %}">SIGN OUT</a></li>
+            </ul>  
+          </div>
+        </div>
+      </nav>
+
+<br><br>
+
+ <!--navigation-->
+{% block contents %}
+
+
+
+            {% endblock %}
+
+
+        <!-- Hero-Section
+          ================================================== -->
+
+
+
+
+
+
+<!-- partial -->
+
+</main><!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script  src="{% static 'js/vendors/@popperjs/popper.min.js' %}"></script>
+<script  src="{% static 'js/vendors/bootstrap/bootstrap.min.js' %}"></script>
+<script  src="{% static 'js/vendors/is/is.min.js' %}"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="{% static 'js/theme.js' %}"></script>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+</body>
+
+</html>

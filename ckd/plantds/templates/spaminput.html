@@ -1,0 +1,279 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+{% block contents %}
+                                        
+  <div class="container" data-aos="fade-up">
+  <div class="h1 text-center text-dark" id="pageHeaderTitle"><spam style="color:blue;">Welcome To Chronic Kidney Disease Detection</spam></div>
+
+        <form action="/spamreport/" method="post">
+            {% csrf_token %}
+            <br>
+            <!--Row 1-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <label>Enter age in years:</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="age" required><br>
+              </div>
+              <br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <label>Enter blood pressure in mm/Hg:</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="bp" required><br>
+              </div>
+            </div>
+            <br>
+            <!--Row 2-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <label>Enter Specific gravity in nominal:</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="sg" required><br>
+              </div>
+               <br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <label>Enter albumin in nominal(1-5):</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="al" required><br>
+              </div>
+            </div>
+            <br>
+            <!--Row 3-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <label>Enter sugar in nominal:</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="su" required><br>
+              </div>
+              <br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <label>Enter rbc(normal,abnormal:)</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="rbc" id="rbc">
+                  <option value="normal">normal</option>
+                  <option value="abnormal">abnormal</option>
+                  
+                </select>
+              </div>
+            </div>
+            <br>
+            <!--Row 4-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 7-->
+                <label>Enter pus cell(normal,abnormal):</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="pc" id="pc">
+                  <option value="normal">normal</option>
+                  <option value="abnormal">abnormal</option>
+                  
+                </select>
+              </div>
+              <br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 8-->
+                <label>Enter pus cell clumps(present,not present):</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="pcc" id="pcc">
+                  <option value="present">present</option>
+                  <option value="not Present">not present</option>
+                  
+                </select><br>
+              </div>
+            </div>
+            <br>
+            <!--Row 5-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 9-->
+                <label>Enter bacteria(present,not present):</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--<input type="text" name="ba" required><br>-->
+                <select name="ba" id="ba">
+                  <option value="present">present</option>
+                  <option value="not Present">not present</option>
+                  
+                </select>
+              </div>
+              <br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 10-->
+                <label>Enter blood glucose rando:</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="bgr" required><br>
+              </div>
+            </div><br>
+            <!--Row 6-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 11-->
+                <label>Enter blood urea:</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="bu" required><br>            
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 12-->
+                <label>Enter serum creatinione</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="sc" required><br>
+              </div>
+            </div><br>
+            <!--Row 7-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 13-->
+                <label>Enter sodium</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="sod" required><br>            
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 14-->
+                <label>Enter potassium</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="pot" required><br>
+              </div>
+            </div><br>
+            <!--Row 8-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 15-->
+                <label>Enter hemoglobin</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="hemo" required><br>            
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 16-->
+                <label>Enter packed cell volume</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="pcv" required><br>
+              </div>
+            </div><br>
+            <!--Row 9-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 17-->
+                <label>Enter white blood cell count</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="wc" required><br>            
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 18-->
+                <label>Enter red blood cell count</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <input type="number" name="rc" required><br>
+              </div>
+            </div><br>
+            <!--Row 10-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 19-->
+                <label>Enter hypertension</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="htn" id="htn">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option></select>         
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 20-->
+                <label>Enter appetite</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="appet" id="appet">
+                  <option value="good">good</option>
+                  <option value="poor">poor</option></select>
+                  <br>
+              </div>
+            </div><br>
+            <!--Row 11-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 21-->
+                <label>Enter pedal edema</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="pe" id="pe">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option></select>
+                  <br>            
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 22-->
+                <label>Enter anemia</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="ane" id="ane">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option></select><br>
+              </div>
+            </div>
+            <br>
+            <!--Row 12-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 23-->
+                <label>Enter dm</label>
+              </div>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <select name="dm" id="dm">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option></select><br>            
+              </div><br>
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 24-->
+                <label>Enter cad</label>
+             </div>
+                <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                  <select name="cad" id="cad">
+                  <option value="yes">yes</option>
+                    <option value="no">no</option></select><br>
+               </select>
+                     </div>
+                </div><br>
+            <!--Row 13-->
+            <div class="row content">
+              <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+                <!--Label 25-->
+                <label>Enter eGFR</label>
+              </div><br>
+           <div class="col-lg-3" data-aos="fade-left" style="font-family: Arial, Helvetica, sans-serif;">
+            <input type="number" name="eGFR" required><br>
+           </div>
+           </div>
+
+
+            <br/>  
+            <!-- <input type="text" name="enter" placeholder="Enter your content">-->
+            <center>
+            <input type="submit" value="submit">
+          </center>
+        </form>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    
+{% endblock %}
+

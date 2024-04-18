@@ -1,0 +1,25 @@
+{% extends 'adminbase.html' %}
+{% load static %}
+
+{% block contents %}
+<section class="py-0" id="header">
+    {% comment %} <div class="bg-holder d-none d-md-block" style="background-image:url({% static 'images/hero-header.png' %}); background-position:right top; background-size:contain;"></div> {% endcomment %}
+    <div class="container">
+      <img src="{% static 'images/hero-header.png' %}" style="float: right; height: 300px; width: 400px; margin-right: 10px; margin-top: 130px;">
+
+      <div class="row align-items-center min-vh-75 min-vh-lg-100">
+        <div class="col-md-7 col-lg-6 col-xxl-5 py-6 text-sm-start text-center">
+          <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6">Welcome To<br class="d-block d-lg-block" />Admin Page</h1>
+          <p class="mb-4 fs-1">To Activate New User, Follow below steps.</p>
+          <ol>
+            <li><b>Step 1: </b>Go to User Details Tab in Nav Bar</li>
+            <br><li><b>Step 2: </b>Check Activate New User Table</li>
+            <br><li><b>Step 3: </b>In Active Column - Check New User Row With Name </li>
+            <br><li><b>Step 4: </b>In Active Column - Click Activate</li>
+            <br><li><b>Step 5: </b>Check It Turns to Activated</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

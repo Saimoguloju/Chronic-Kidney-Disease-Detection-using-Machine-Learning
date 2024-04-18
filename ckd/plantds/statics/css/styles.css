@@ -1,0 +1,141 @@
+body{
+    background-color: rgb(241, 234, 241);
+}
+.navigation{
+    height: 100px;
+    background-color:rgb(241, 234, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    position: relative;
+    /* background-color:rgb(39, 16, 39); */
+    
+}
+
+.navigation::after{
+
+    /* background-image: url('../img/heart.jpg'); */
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 1;
+    
+}
+
+.nav-left{
+    margin-top: 20px;
+    display: flex;
+    font-family: var(--font1);
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.nav-left img{
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(238, 225, 225);
+    border-radius: 100px;
+}
+
+.nav-right{
+    margin-right: 15px;
+}
+.nav-right ul li{
+    display: inline;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+.nav-right ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-family: var(--font2);
+    font-weight: bolder;
+    
+}
+
+.nav-right ul li a:hover{
+    color: var(--main-bg-color);
+}
+
+.content{
+    height: 530px;
+    /* background-color: red; */
+    display: flex;
+    border: 1px solid rgb(131, 84, 131);
+}
+
+.content-image{
+    
+    width: 50%;
+    display: flex;
+    /* background-image: url('../static/images/heart.jpg'); */
+    
+}
+
+.content-text{
+    font-family: var(--font1);
+    font-weight: bolder;
+    width: 50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 172, 180);
+    flex-direction: column;
+   
+}
+
+.content-text input{
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+.content-text form{
+    margin-left: 60px;
+}
+.content-text form span{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.content-text h3{
+    font-size: 35px;
+    padding-left: 0px;
+}
+
+.content-text h2{
+    font-size: 45px;
+    padding-left: 20px;
+    color: rgb(126, 37, 37);
+}
+
+.content-text span {
+    margin-left: 40px;
+    margin-top: 25px;
+    
+}
+
+.content-text form button{
+    padding: 2px 25px;
+    margin-top: 5px;
+    margin-left: -25px;
+}
+
+button:hover{
+    color: var(--main-bg-color);
+}
+
+.footer{
+    height: 40px;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

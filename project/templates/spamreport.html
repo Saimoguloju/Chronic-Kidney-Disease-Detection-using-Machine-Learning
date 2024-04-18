@@ -1,0 +1,35 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+{% block contents %}
+
+         
+<section class="py-0" id="header">
+
+  <!--/.bg-holder-->
+  <div class="container">
+    <div class="row align-items-center min-vh-75 min-vh-lg-100">
+      <div class="col-md-7 col-lg-12 col-xxl-5 py-6 text-sm-start text-center">         
+        <h1 class="mt-6 mb-sm-4 fw-semi-bold lh-sm fs-4 fs-lg-5 fs-xl-6 text-center">MODEL PREDICTION PAGE</h1>
+        <p class="mb-4 fs-1"><b>Model Predicted Patient Report: </b></p>
+        <p>Stage: {{object}}</p>
+        <ol>
+          <li><b>Stage Type: </b>{{object1}}</li>
+          <br><li><b>Description: </b>{{object2}}</li>
+          <br><li><b>Diagnosis: </b>{{object3}}</li>
+          <br><li><b>Scientific Drug: </b>{{object4}}</li>
+          <br><li><b>Food Precautions: </b>{{object5}}</li>
+          <br><li><b>Physical Exercise Recommendation: </b>{{object6}}</li>
+          <br><li><b>Water Precautions: </b>{{object7}}</li>
+          <br><li><b>Yoga Poses Recommendation: </b>{{object8 }}</li>                     
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        
+{% endblock %}
+

@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Chronic kidney disease detection using machine learning</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">-->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================
+    <link href="assets/css/theme.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
+    <style>
+      
+    </style>
+
+  </head>
+  <body>
+      <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light opacity-85" data-navbar-on-scroll="data-navbar-on-scroll">
+          <div class="container">
+            
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'initialstage' %}">Stage 0</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'firststage' %}">Stage 1</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'secondstage' %}">Stage 2</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'thirdstage' %}">Stage 3</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'fourthstage' %}">Stage 4</a></li>
+                <li class="nav-item px-2"><a class="nav-link fw-medium" href="{% url 'logout' %}">BACK</a></li>
+
+  
+
+  
+  
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+        <section class="py-0" id="header">
+          {% comment %} <div class="bg-holder d-none d-md-block" style="background-image:url({% static 'images/recommendations.jpg' %}); background-position:right top; background-size:contain;"></div> {% endcomment %}
+          <div class="container">
+            <img src="{% static 'images/recommendations.jpg' %}" style="float: right; height: 300px; width: 400px; margin-right: 10px; margin-top: 130px;">
+            
+
+            <div class="row align-items-center min-vh-75 min-vh-lg-100">
+                  <h2>RECOMMENDATIONS AND PRECAUTIONS</h2>
+                  
+                 
+            </div>
+          </div>
+        </section>
+
+
+
+     
+    
+  
+        <section class="py-0" id="contact">
+          
+          <!--/.bg-holder-->
+          <div class="container">
+            
+            <hr class="text-300 mb-0" />
+           
+          </div>
+        </section>
+
+    
+
+
+
+   
+    
+
+   
+
+
+    <script  src="{% static 'js/vendors/@popperjs/popper.min.js' %}"></script>
+    <script  src="{% static 'js/vendors/bootstrap/bootstrap.min.js' %}"></script>
+    <script  src="{% static 'js/vendors/is/is.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&amp;display=swap" rel="stylesheet">  
+  </body>
+</html>  

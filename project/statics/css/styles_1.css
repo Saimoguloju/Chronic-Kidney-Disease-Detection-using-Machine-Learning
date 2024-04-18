@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(241, 234, 241);
+}
+.navigation{
+    height: 100px;
+    background-color:rgb(241, 234, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    position: relative;
+    /* background-color:rgb(39, 16, 39); */
+    
+}
+
+.navigation::after{
+
+    /* background-image: url('../img/heart.jpg'); */
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 1;
+    
+}
+
+.nav-left{
+    margin-top: 20px;
+    display: flex;
+    font-family: var(--font1);
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.nav-left img{
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(238, 225, 225);
+    border-radius: 100px;
+}
+
+.nav-right{
+    margin-right: 15px;
+}
+.nav-right ul li{
+    display: inline;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+.nav-right ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-family: var(--font2);
+    font-weight: bolder;
+    
+}
+
+.nav-right ul li a:hover{
+    color: var(--main-bg-color);
+}
+
+.content{
+    height: 530px;
+    /* background-color: red; */
+    display: flex;
+    border: 1px solid rgb(131, 84, 131);
+}
+
+.content-image{
+    width: 50%;
+    display: flex;
+    /* background-image: url(../img/heart.jpg); */
+    
+}
+
+.content-text{
+    font-family: var(--font1);
+    font-weight: bold;
+    width: 50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 172, 180);
+    flex-direction: column;
+    /* margin-top: -50px; */
+    
+}
+.content-text form input{
+    margin-top: 5px;
+}
+
+.content-text form button{
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+.footer{
+    height: 40px;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
