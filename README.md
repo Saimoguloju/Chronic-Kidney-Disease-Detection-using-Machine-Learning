@@ -3,7 +3,12 @@ Our final year academic project focuses on detecting chronic kidney disease thro
 
 Our project aims to provide a valuable tool for early detection and risk assessment of chronic kidney disease, thereby improving patient outcomes and reducing healthcare costs. We explore the application of diverse machine learning algorithms to predict disease levels and recommend suitable medications based on patient profiles. By early prediction using patient conditions and physical symptoms, we achieve more accurate reports. Our goal is to enhance accuracy, optimize treatment plans, and ultimately improve patient outcomes.
 
-I am Moguloju Sai, Data Science Engineer.
+## ML Algorithms accuracy:
+1. Decision Tree Classifier: 100%
+2. Random Forest Classifier: 100%
+3. Logistic Regression: ~85%
+4. KNN (k-Nearest Neighbors): ~75%
+
 
 You can contact me on:
 1. [Linkedin](https://www.linkedin.com/in/moguloju-sai-2b060b228)
