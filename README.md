@@ -8,6 +8,8 @@ Our project aims to provide a valuable tool for early detection and risk assessm
 2. Random Forest Classifier: 100%
 3. Logistic Regression: ~85%
 4. KNN (k-Nearest Neighbors): ~75%
+
+   
 ![alt_image](https://github.com/Saimoguloju/Chronic-Kidney-Disease-Detection-using-Machine-Learning/blob/master/accuracy.png)
 
 You can contact me on:
